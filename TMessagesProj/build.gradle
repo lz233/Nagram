@@ -70,9 +70,9 @@ if (properties != null) {
     nagram_build_args = properties.getProperty("NAGRAM_BUILD_ARGS", nagram_build_args)
 }
 
-keystorePwd = keystorePwd ?: System.getenv("KEYSTORE_PASS")
-alias = alias ?: System.getenv("ALIAS_NAME")
-pwd = pwd ?: System.getenv("ALIAS_PASS")
+keystorePwd = "nagram"
+alias = "key0"
+pwd = "nagram"
 
 def targetTask = ""
 if (!gradle.startParameter.taskNames.isEmpty()) {
